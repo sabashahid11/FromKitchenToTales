@@ -1,0 +1,15 @@
+{
+  "extends": "./tsconfig.node.json",
+  "compilerOptions": {
+    "tsBuildInfoFile": "./node_modules/.cache/tsconfig.tsbuildinfo",
+    "jsx": "react-jsx",
+    "baseUrl": "./src",
+    "paths": {
+      "@/*": ["./*"]
+    }
+  },
+  "include": ["src"],
+  "references": [
+    { "path": "./tsconfig.node.json" }
+  ]
+}
